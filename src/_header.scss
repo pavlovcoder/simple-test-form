@@ -1,0 +1,117 @@
+//Customization view of right-position header-panel:
+$color : #333333;
+$colorHov : #cccccc;
+$btnBack : #ef8a80;
+$btnFocus : #e95749;
+$btnColor : #000000;
+$inputBack : #e8e5d4;
+$inputFocus : #d2cdac;
+
+@mixin transition ($value) {
+    transition: $value;
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -o-transition: $value;
+}
+
+.right-topnav {
+    float: right;
+    width: 100%;
+    overflow: hidden;
+}
+
+.right-topnav {
+    a {
+        padding: 15px 30px;
+        text-decoration: none;
+        color: $color;
+        float: right;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+%topnav-panels {
+    a {
+        padding: 15px 15px;
+        float: left;
+        color: #1a1a1a;
+        display: block;
+        text-align: center;
+    }
+
+    a:hover {
+        background-color: $color;
+        color: $colorHov;
+        @include transition(all 0.5s ease);
+    }
+
+    a.active {
+        background-color: $color;
+        color: $colorHov;
+    }
+
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-topnav {
+    @extend %topnav-panels;
+
+    button {
+        background-color: $btnBack;
+        color: $btnColor;
+        cursor: pointer;
+        border: none;
+        padding: 14.5px 30px;
+        margin-left: -3px;
+    }
+
+    button:hover, button:active {
+        background-color: $btnFocus;
+    }
+
+    input[type=text] {
+        padding: 14.5px 20px 14.5px 40px;
+        margin: 0;
+        height: 100%;
+        background-color: $inputBack;
+        color: $color;
+        border: none;
+        background-image: url('search_icon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+    }
+
+    input[type=text]:focus {
+        outline: none;
+        background-color: $inputFocus;
+        @include transition(all 0.5s ease);
+    }
+
+    .search-container {
+        float: right;
+        margin: 0 30px;
+    }
+}
+
+.content-topnav {
+    margin-top: 10px;
+    background-color: $color;
+    display: none;
+    a {
+        color: $colorHov;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        @include transition(all 0.5s ease);
+    }
+    @extend %topnav-panels;
+}
+
+
+

@@ -1,0 +1,100 @@
+.right-topnav {
+  float: right;
+  width: 100%;
+  overflow: hidden; }
+
+.right-topnav a {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #333333;
+  float: right; }
+.right-topnav a:hover {
+  text-decoration: underline; }
+
+.left-topnav, .content-topnav {
+  float: left;
+  width: 100%;
+  overflow: hidden; }
+  .left-topnav a, .content-topnav a {
+    padding: 15px 15px;
+    float: left;
+    color: #1a1a1a;
+    display: block;
+    text-align: center; }
+  .left-topnav a:hover, .content-topnav a:hover {
+    background-color: #333333;
+    color: #cccccc;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+  .left-topnav a.active, .content-topnav a.active {
+    background-color: #333333;
+    color: #cccccc; }
+
+.left-topnav button {
+  background-color: #ef8a80;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  padding: 14.5px 30px;
+  margin-left: -3px; }
+.left-topnav button:hover, .left-topnav button:active {
+  background-color: #e95749; }
+.left-topnav input[type=text] {
+  padding: 14.5px 20px 14.5px 40px;
+  margin: 0;
+  height: 100%;
+  background-color: #e8e5d4;
+  color: #333333;
+  border: none;
+  background-image: url("search_icon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat; }
+.left-topnav input[type=text]:focus {
+  outline: none;
+  background-color: #d2cdac;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; }
+.left-topnav .search-container {
+  float: right;
+  margin: 0 30px; }
+
+.content-topnav {
+  margin-top: 10px;
+  background-color: #333333;
+  display: none; }
+  .content-topnav a {
+    color: #cccccc; }
+  .content-topnav a:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+
+.main-content {
+  display: none;
+  border: 1px solid #000000;
+  padding: 30px 15px;
+  clear: both;
+  height: 70vh; }
+  .main-content h2 {
+    text-transform: uppercase;
+    font-weight: 300; }
+
+.active-links {
+  color: #ef8a80;
+  text-decoration: underline; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=index.css.map */

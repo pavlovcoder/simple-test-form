@@ -1,0 +1,19 @@
+$linksColor : #ef8a80;
+
+.main-content {
+    display: none;
+    border: 1px solid #000000;
+    padding: 30px 15px;
+    clear: both;
+    height: 70vh;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+}
+
+.active-links {
+    color: $linksColor;
+    text-decoration: underline;
+}
